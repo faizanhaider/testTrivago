@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>trivago</title>
+		<meta name="description" content=""/>
+		<meta name="author" content=""/>
+		<meta content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <!--<link rel="stylesheet" href="css/reset.css"/>-->
+        <link rel="stylesheet" href="css/pricesearch.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="css/ie8.css"/>
+        <![endif]-->
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="css/ie7.css"/>
+        <![endif]-->
+
+	</head>
+	<body>
+		<div class="page_wrapper">
+			<!-- header start -->
+			<div class="header cf">
+				<!-- branding start -->
+				<div class="branding">
+                    <span id="show_nav" class="img_sprite_moon show_navbar">Filter</span>
+					<img src="http://ie1.trivago.com/images/layoutimages/mars/logo@2x.png" alt="" class="logo"/>
+				</div>
+				<!-- branding end -->
+				<!-- dealform_querycenter start -->
+				<div class="dealform_querycenter cf">
+					<div class="dealform_query_go">
+						<button type="button" id="js_go" class="button search">
+							Search
+						</button>
+					</div>
+					<div class="dealform_query_input">
+                        <input class="querystring_shadow" type="text" value=""/>
+						<input class="querystring" type="text" value=""/>
+						<div id="js_short_dealinfos" class="short_dealinfos">
+                            <button class="dealinfosbutton_small">
+                                <span class="img_sprite_moon dealbutton_calendar"><!-- --></span>
+                                <span class="img_sprite_moon roomtype roomtype7"><!-- --></span>
+                            </button>
+							<button class="dealinfosbutton " type="button">
+								<span class="fulljustify" id="date_from">So, 15.09.13</span>
+								<span class="fulljustify" id="date_to">Mo, 16.09.13</span>
+								<span class="img_sprite_moon roomtype roomtype7"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- dealform_querycenter end -->
+			</div>
+			<!-- header end -->
+			<div class="page cf">
+				<!-- nav_filter_bar start -->
+				<div class="nav">
+					<ul class="nav_tabs z_index2">
+						<li class="navigation selected" id="navigation">
+							<div>
+								Navigation
+							</div>
+						</li>
+						<li class="filters " id="filters">
+							<div>
+								Filter
+							</div>
+						</li>
+					</ul>
+					<div id="js_left_bar" class="nav_fix">
+						<div id="js_left_bar_content" class="nav_content">
+
+							<div id="js_left_bar_transparency" class="trv_transparency">
+								<div id="js_left_bar_transparency_loader" class="trv_loader"></div>
+							</div>
+                            <!-- navigation start -->
+							<div id="js_navigation">
+								<div class="map_hi" id="js_map_navigation">
+									<div class="module" id="toplist" data-ipathid="0">
+										<div data-ipathid="0" data-scurrentquerypathname="Weltweit" data-idisplayedpathid="0"
+                                             data-sdisplayedpathname="weltweit" id="js_toplist_map" class="map z_index0" style="                                background: url('http://ie2.trivago.com/images/layoutimages/moon/reg_map/0.png');
+										">
+											<em data-ipathid="561" data-bisbigregion="true" class="maplink"
+                                                style="top:133.66668701171875px;left:132.5333251953125px;">Australien &amp; Ozeanien </em>
+											<em
+                                                    data-ipathid="238" data-bisbigregion="true" class="maplink"
+                                                    style="top:58px;left:171.449951171875px;">Asien </em>
+											<em data-ipathid="581"
+                                                data-bisbigregion="true"
+                                                class="maplink"
+                                                style="top:46px;left:100px;">Europa </em>
+											<em
+                                                    data-ipathid="34225" data-bisbigregion="true" class="maplink"
+                                                    style="top:51.33331298828125px;left:3.2166748046875px;">Nordamerika </em>
+											<em
+                                                    data-ipathid="33386" data-bisbigregion="true" class="maplink"
+                                                    style="top:116.11666870117188px;left:5.11663818359375px;">Mittel- und Südamerika </em>
+											<em
+                                                    data-ipathid="1" data-bisbigregion="true" class="maplink" style="top:87px;left:103px;">Afrika </em>
+										</div>
+										<ul class="city_list" id="js_city_list">
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="8514">
+												<img class="pathicon"
+                                                     alt="Berlin, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/38/48/3848_v12_xsq.jpeg">
+												<p>Berlin<br>2104Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="9644">
+												<img class="pathicon"
+                                                     alt="Hamburg, Deutschland"
+                                                     title="Hamburg, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/42/91/4291_v17_xsq.jpeg">
+												<p>Hamburg<br>421Hotels</p>
+
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="3577">
+												<img class="pathicon"
+                                                     alt="München, Deutschland"
+                                                     title="München, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/18/03/1803_v7_xsq.jpeg">
+												<p>München<br>489Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="36103">
+												<img class="pathicon"
+                                                     alt="Paris, Frankreich"
+                                                     title="Paris, Frankreich"
+                                                     src="http://imgec.trivago.com/categoryimages/22/23/22235_v12_xsq.jpeg">
+												<p>Paris<br>2818Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="15481">
+												<img class="pathicon"
+                                                     alt="Köln, Deutschland"
+                                                     title="Köln, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/66/39/6639_v10_xsq.jpeg">
+												<p>Köln<br>430Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="38715">
+												<img class="pathicon"
+                                                     alt="London, Großbritannien"
+                                                     title="London, Großbritannien"
+                                                     src="http://imgec.trivago.com/categoryimages/17/39/17399_v8_xsq.jpeg">
+												<p>London<br>2703Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="46814">
+												<img class="pathicon"
+                                                     alt="Amsterdam, Niederlande"
+                                                     title="Amsterdam, Niederlande"
+                                                     src="http://imgec.trivago.com/categoryimages/27/56/27561_v6_xsq.jpeg">
+												<p>Amsterdam<br>1606 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="31965">
+												<img class="pathicon"
+                                                     alt="Barcelona, Spanien"
+                                                     title="Barcelona, Spanien"
+                                                     src="http://imgec.trivago.com/categoryimages/13/43/13437_v13_xsq.jpeg">
+												<p>Barcelona<br>2821Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="34812">
+												<img class="pathicon"
+                                                     alt="New York City, USA"
+                                                     title="New York City, USA"
+                                                     src="http://imgec.trivago.com/categoryimages/14/73/14734_v8_xsq.jpeg">
+												<p>New York City<br>1375 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="9647">
+												<img class="pathicon"
+                                                     alt="Frankfurt am Main, Deutschland"
+                                                     title="Frankfurt am Main, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/42/93/4293_v14_xsq.jpeg">
+												<p>Frankfurt am Main<br>303 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="94718">
+												<img class="pathicon"
+                                                     alt="Venedig, Italien"
+                                                     title="Venedig, Italien"
+                                                     src="http://imgec.trivago.com/categoryimages/26/80/26802_v11_xsq.jpeg">
+												<p>Venedig<br>1489 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="21467">
+												<img class="pathicon"
+                                                     alt="Dresden, Deutschland"
+                                                     title="Dresden, Deutschland"
+                                                     src="http://imgec.trivago.com/categoryimages/93/80/9380_v28_xsq.jpeg">
+												<p>Dresden<br>390 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="44232">
+												<img class="pathicon"
+                                                     alt="Wien, Österreich"
+                                                     title="Wien, Österreich"
+                                                     src="http://imgec.trivago.com/categoryimages/24/97/24979_v12_xsq.jpeg">
+												<p>Wien<br>1205Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="44337">
+												<img class="pathicon"
+                                                     alt="Rom, Italien"
+                                                     title="Rom, Italien"
+                                                     src="http://imgec.trivago.com/categoryimages/13/43/13437_v15_xsq.jpeg"
+                                                  >
+												<p>Rom<br>5014 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+											<li class="js_toplistbox js_toplistlink cf" data-ipathid="42695">
+												<img class="pathicon"
+                                                     alt="Prag, Tschechische Republik"
+                                                     title="Prag, Tschechische Republik"
+                                                     src="http://imgec.trivago.com/categoryimages/23/44/23442_v12_xsq.jpeg">
+												<p>Prag<br>1764 Hotels</p>
+												<span class="arrow"> ​</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+                            <!-- navigation end -->
+                            <!-- filterlist start -->
+							<div id="js_filterlist" style="display: none;" class="filterlist">
+								<div id="js_filters" data-distancelimit="20000" data-currencyrate="1.00000000"
+                                     data-distancerate="1.00000000" data-decimalseparator=",">
+									<div class="filtergroup cf member_profile memberProfileDisabled" id="fg_member_profile">
+										<h4> Filterprofile</h4>
+										<div class="search_input_wrapper member_assets">
+											<div class="sbHolder" tabindex="1">
+												<span class="sbToggleBase"><a href="#"
+                                                                              class="sbToggle"></a></span>
+												<a
+                                                        href="#" class="sbSelector">Standard </a>
+												<ul id="js_iMemberProfileId" class="memberProfile sbOptions" style="display: none;">
+													<li data-value="0" class="sbFocus">
+														Standard
+													</li>
+													<li data-value="2">
+														Businesshotels
+													</li>
+													<li data-value="4">
+														Urlaubshotels
+													</li>
+													<li data-value="-1" class="bold divider">
+														Aktuelle Filterauswahl speichern
+													</li>
+													<li data-value="-2" class="bold">
+														Weiter zu den Filtereinstellungen
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="filtergroup cf " id="fg_stars">
+										<h4>Sterne</h4>
+										<ul class="stars">
+											<li id="js_boxStars1" class="button filter js_box stars checked stars_1"
+                                                title="0/ 1 Sterne Hotels">
+												<!-- // -->
+											</li>
+											<li id="js_boxStars2" class="button filter js_box stars checked stars_2"
+                                                title="2 Sterne Hotels">
+												<!-- // -->
+											</li>
+											<li id="js_boxStars3" class="button filter js_box stars checked stars_3"
+                                                title="3 Sterne Hotels">
+												<!-- // -->
+											</li>
+											<li id="js_boxStars4" class="button filter js_box stars checked stars_4"
+                                                title="4 Sterne Hotels">
+												<!-- // -->
+											</li>
+											<li id="js_boxStars5" class="button filter js_box stars checked stars_5"
+                                                title="5 Sterne Hotels">
+												<!-- // -->
+											</li>
+										</ul>
+									</div>
+									<div class="filtergroup cf" id="fg_rating">
+										<h4>Bewertung</h4>
+										<ul class="rating">
+											<li id="js_boxRating1" class="button filter js_box rating checked rating_1"
+                                                title="10% aller auf trivago bewerteten Hotels haben diese Beurteilung">
+												<!-- // -->
+											</li>
+											<li id="js_boxRating2" class="button filter js_box rating checked rating_2"
+                                                title="15% aller auf trivago bewerteten Hotels haben diese Beurteilung">
+												<!-- // -->
+											</li>
+											<li id="js_boxRating3" class="button filter js_box rating checked rating_3"
+                                                title="35% aller auf trivago bewerteten Hotels haben diese Beurteilung">
+												<!-- // -->
+											</li>
+											<li id="js_boxRating4" class="button filter js_box rating checked rating_4"
+                                                title="25% aller auf trivago bewerteten Hotels haben diese Beurteilung">
+												<!-- // -->
+											</li>
+											<li id="js_boxRating5" class="button filter js_box rating checked rating_5"
+                                                title="15% aller auf trivago bewerteten Hotels haben diese Beurteilung">
+												<!-- // -->
+											</li>
+										</ul>
+									</div>
+									<div class="filtergroup cf " id="fg_search">
+										<h4>Hotel suchen</h4>
+										<div class="search_input_wrapper last cf">
+											<input type="text" id="js_search_string"
+                                                   autocomplete="off" spellcheck="false"
+                                                   placeholder="Hotelnamen suchen"
+                                                   value="">
+											<span id="js_search_string_submit"
+                                                  class=""><span
+                                                    class="img_sprite"><!-- --></span></span>
+										</div>
+									</div>
+									<div class="filtergroup cf " id="fg_f">
+										<h4>Top Eigenschaften</h4>
+										<ul class="topOptions cf">
+											<li id="js_boxTopOption254" class="button filter js_box topOption f_254" title="WLAN">
+												<!-- // -->
+												<span class="label">WLAN</span>
+											</li>
+											<li id="js_boxTopOption60" class="button filter js_box topOption f_60" title="Wellness">
+												<!-- // -->
+												<span class="label">Wellness</span>
+											</li>
+											<li id="js_boxTopOption231" class="button filter js_box topOption f_231 disabled"
+                                                title="Strand">
+												<!-- // -->
+												<span class="label">Strand</span>
+											</li>
+											<li id="js_boxTopOptionbreakfast" class="button filter js_box topOption f_breakfast"
+                                                title="Frühstück">
+												<!-- // -->
+												<span class="label">Frühstück</span>
+											</li>
+											<li id="js_boxTopOption347" class="button filter js_box topOption f_347" title="Pool">
+												<!-- // -->
+												<span class="label">Pool</span>
+											</li>
+										</ul>
+										<div id="js_fg_f_info_body" class="js-filter-tooltip"></div>
+									</div>
+									<div class="cf">
+                                    	<!-- Dynamic filters sidebar start -->
+										<div id="js_dynamic_filter_groups">
+											<div id="fg_14" class="filtergroup group dynamic collapsed shrinked"
+                                                 style="display: block; height: 69px;">
+
+												<div id="f_230" class="checkbox top3"
+                                                     style="display: block; position: absolute; top: 24px; left: 0px;">
+													<input
+                                                            type="checkbox" id="f_230_input" value="1">
+													<label class="f_230_input"
+                                                           for="f_230_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Stadthotel </span><span id="f_230_info" class="info">&nbsp;(668)</span></label>
+												</div>
+												<div id="f_234" class="checkbox" style="display: none;">
+													<input type="checkbox"
+                                                           id="f_234_input"
+                                                           value="1">
+													<label
+                                                            class="f_234_input" for="f_234_input"><span class="icon-checkbox">&#8203;</span><span
+                                                            class="label"> Wellnesshotel </span><span id="f_234_info" class="info"><span id="f_234_info" class="info">(12)</span></span></label>
+												</div>
+												<div id="f_231" class="checkbox disabled" style="display: none;">
+													<input
+                                                            type="checkbox" id="f_231_input" value="1">
+													<label class="f_231_input"
+                                                           for="f_231_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Strandhotel </span><span id="f_231_info" class="info"></span></label>
+												</div>
+												<div id="f_220" class="checkbox top3"
+                                                     style="display: block; position: absolute; top: 60px; left: 0px;">
+													<input
+                                                            type="checkbox" id="f_220_input" value="1">
+													<label class="f_220_input"
+                                                           for="f_220_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Designerhotel </span><span id="f_220_info" class="info">&nbsp;(57)</span></label>
+												</div>
+												<div id="f_276" class="checkbox" style="display: none;">
+													<input type="checkbox"
+                                                           id="f_276_input"
+                                                           value="1">
+													<label
+                                                            class="f_276_input" for="f_276_input"><span class="icon-checkbox">&#8203;</span><span
+                                                            class="label"> Familienhotel </span><span id="f_276_info" class="info"><span id="f_276_info" class="info">(10)</span></span></label>
+												</div>
+												<div id="f_274" class="checkbox" style="display: none;">
+													<input type="checkbox"
+                                                           id="f_274_input"
+                                                           value="1">
+													<label
+                                                            class="f_274_input" for="f_274_input"><span class="icon-checkbox">&#8203;</span><span
+                                                            class="label"> Landhotel </span><span id="f_274_info" class="info"><span id="f_274_info" class="info">(3)</span></span></label>
+												</div>
+												<div id="f_227" class="checkbox" style="display: none;">
+													<input type="checkbox"
+                                                           id="f_227_input"
+                                                           value="1">
+													<label
+                                                            class="f_227_input" for="f_227_input"><span class="icon-checkbox">&#8203;</span><span
+                                                            class="label"> Luxushotel </span><span id="f_227_info" class="info"><span id="f_227_info" class="info">(15)</span></span></label>
+												</div>
+												<div id="f_232" class="checkbox top3"
+                                                     style="display: block; position: absolute; top: 42px; left: 0px;">
+													<input
+                                                            type="checkbox" id="f_232_input" value="1">
+													<label class="f_232_input"
+                                                           for="f_232_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Kongresshotel </span><span id="f_232_info" class="info">&nbsp;(105)</span></label>
+												</div>
+												<div id="f_221" class="checkbox" style="display: none;">
+													<input type="checkbox"
+                                                           id="f_221_input"
+                                                           value="1">
+													<label
+                                                            class="f_221_input" for="f_221_input"><span class="icon-checkbox">&#8203;</span><span
+                                                            class="label"> Erlebnishotel </span><span id="f_221_info" class="info"><span id="f_221_info" class="info">(1)</span></span></label>
+												</div>
+												<div id="f_226" class="checkbox disabled" style="display: none;">
+													<input
+                                                            type="checkbox" id="f_226_input" value="1">
+													<label class="f_226_input"
+                                                           for="f_226_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Kur- / Rehahotel </span><span id="f_226_info" class="info"></span></label>
+												</div>
+												<div id="f_219" class="checkbox disabled" style="display: none;">
+													<input
+                                                            type="checkbox" id="f_219_input" value="1">
+													<label class="f_219_input"
+                                                           for="f_219_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Club/ Clubhotel </span><span id="f_219_info" class="info"></span></label>
+												</div>
+												<div id="f_275" class="checkbox disabled" style="display: none;">
+													<input
+                                                            type="checkbox" id="f_275_input" value="1">
+													<label class="f_275_input"
+                                                           for="f_275_input"><span
+                                                            class="icon-checkbox">&#8203;</span><span class="label"> Bauernhof </span><span id="f_275_info" class="info"></span></label>
+												</div><span class="filter_fieldgroup_title"> Thema/ Typ </span><a class="more_less cf"><span class="more">mehr</span><span style="display: none;"
+                                                                                                                                                                           class="less">weniger</span><span
+                                                    class="img_sprite_moon dynamic_filter_arrow_down"><!-- --></span></a>
+											</div>
+										</div>
+										<!-- Dynamic filters sidebar end -->
+										<div id="js_more_filters" class="button standard half ">
+											<span>Mehr Filter</span>
+										</div>
+										<div id="js_save_filters" class="button standard member_assets  half">
+											<span>Filter speichern</span>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <!-- filterlist end -->
+						</div>
+					</div>
+				</div>
+				<!-- nav_filter_bar end -->
+				<div class="main">
+					<div class="content">
+                        <!-- suggestions start -->
+                        <div class="suggest">
+                            <ul class="suggestions">
+                                <li data-link="berlin|8514|0" class="hit odd active" title="Berlin">
+                                    <i class="img_sprite_moon path">&nbsp;</i>
+                                    <a href="#berlin|8514|0"> <kbd>Ber</kbd>lin </a>
+                                    Deutschland (2104 Hotels)
+                                    <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                                <li data-link="berchtesgaden|3918|0" class="hit even" title="Berchtesgaden">
+                                    <i class="img_sprite_moon path">&nbsp;</i>
+                                    <a href="#berchtesgaden|3918|0"> <kbd>Ber</kbd>chtesgaden </a>
+                                    Deutschland (105 Hotels)
+                                    <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                                <li data-link="bern|47319|0" class="hit odd" title="Bern">
+                                    <i class="img_sprite_moon path">&nbsp;</i>
+                                    <a href="#bern|47319|0"> <kbd>Ber</kbd>n </a>
+                                    Schweiz (62 Hotels)
+                                    <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                                <li data-link="berchtesgadener-land|6290|0" class="hit even" title="Berchtesgadener Land">
+                                    <i class="img_sprite_moon path">&nbsp;</i>
+                                    <a href="#berchtesgadener-land|6290|0"> <kbd>Ber</kbd>chtesgadener Land </a>
+                                    Deutschland (448 Hotels)
+                                    <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                                <li data-link="bergen|44291|0" class="hit odd" title="Bergen">
+                                    <i class="img_sprite_moon path">&nbsp;</i>
+                                    <a href="#bergen|44291|0"> <kbd>Ber</kbd>gen </a>
+                                    Norwegen (79 Hotels)
+                                    <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                                <li data-link="mitte|8514|1969809" class="hit even last" title="Mitte">
+                                    <i class="img_sprite_moon attraction">&nbsp;</i>
+                                    <a href="#mitte|8514|1969809">Mitte</a>
+                                    <kbd>Ber</kbd>lin, Deutschland <i class="img_sprite_moon magnifier-right-white">&nbsp;</i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- suggestions end -->
+						<!-- itemlistcontrol start -->
+						<div id="js_itemlistcontrol" class="itemlistcontrol collapsed" style="">
+							<div class="control_button list active" id="js_toggleList" data-viewtype="0">
+								<span class="img_sprite_moon ico_itemlist"></span>
+								<span class="label">List</span>
+							</div>
+                            <div class="control_button photoGrid" id="js_togglePhoto" data-viewtype="2">
+								<span class="img_sprite_moon ico_itemlist"></span>
+								<span class="label">Photo</span>
+							</div>
+							<div class="control_button map" id="js_toggleMap" data-viewtype="1">
+								<span class="img_sprite_moon itemmap"></span>
+								<span class="label">Map</span>
+							</div>
+							<div class="item_count expand_button" id="js_searchinfo">
+								<span id="js_hotel_count"><span
+                                        class="result_count">1121</span> out of  2789 hotels</span><span
+                                    class="img_sprite_moon arrow"></span>
+							</div>
+							<div class="sbHolder" style="z-index: 1000;">
+								<span class="sbToggleBase"><a href="#" class="sbToggle"></a></span>
+								<a href="#" class="sbSelector">Sort by <span class="sort_criterion">Popularity</span> </a>
+								<ul id="js_itemlistcontrol_sort" class="order_by sbOptions" data-sort="relevance desc"
+                                    style="display: none;">
+									<li data-value="relevance" class="sbFocus">
+										Sort by <span class="sort_criterion">Popularity</span>
+									</li>
+									<li data-value="overall_liking">
+										Sort by <span class="sort_criterion">Rating</span>
+									</li>
+									<li data-value="price">
+										Sort by <span class="sort_criterion">Price</span>
+									</li>
+									<li class="" data-value="distance">
+										Sort by
+										<span class="sort_criterion">Distance</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- itemlistcontrol end -->
+                        <!-- itemlist start -->
+						<ul class="itemlist">
+                        <!-- item start -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices reduced">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+                                                <strong>92</strong>
+                                                <span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                      <span class="hotel_tester_icon">
+                                                        <span class="hotel_tester_tooltip" style="display: none;">
+                                                            <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                        </span>
+                                                    </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+                                                <strong>4,8</strong>
+                                                <span>mi</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat4">4</span>
+                                            <span class="img_sprite_moon superior">S</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price no_price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong></strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_3 button standard" id="so_rating">
+                                                <strong>78</strong>
+                                                <span class="img_sprite_moon rating_smiley rating3"><!-- --></span>
+                                                <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard region" id="so_map">
+                                                <span class="img_sprite_moon map"><!-- --></span>
+                                                <span class="label">Map</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last" id="so_info">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices" id="so_deals">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <!-- item start -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices reduced">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+                                                <strong>92</strong>
+                                                <span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                  <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+                                                <strong>4,8</strong>
+                                                <span>mi</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <!-- item start -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices reduced">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+                                                <strong>92</strong>
+                                                <span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                  <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+                                                <strong>4,8</strong>
+                                                <span>mi</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <!-- item start -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices reduced">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+                                                <strong>92</strong>
+                                                <span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                  <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+                                                <strong>4,8</strong>
+                                                <span>mi</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <!-- item start -->
+                            <li class="item">
+                                <div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+                                </div>
+                                <div class="item_prices reduced">
+                                    <h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+                                    <div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+                                        <ul class="hotel_prices">
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                            <li class="single_price price even single_price_last">
+                                                <em>Expedia</em>
+                                                <strong>77€</strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="item_nav cf">
+                                            <li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+                                                <strong>92</strong>
+                                                <span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                  <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+                                                <strong>4,8</strong>
+                                                <span>mi</span>
+                                            </li>
+                                            <li class="info js_slideout_trigger button standard last">
+                                                <span class="img_sprite_moon hotel_info"><!-- --></span>
+                                                <span>Info</span>
+                                            </li>
+                                            <li class="available_on deals js_slideout_trigger button standard all_prices">
+                                                <span class="label">View all deals <i>from 24 websites</i></span>
+                                                <span class="img_sprite_moon arrow arrow_down"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_bestprice">
+                                        <strong class="partner_name">Expedia</strong>
+                                        <div class="price_max">
+                                            <span class="wrapper"><span class="price"><del>391€</del></span></span>
+                                        </div>
+                                        <strong class="price_min">220€</strong>
+                                        <button class="button deal" type="button">
+                                            <span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item end -->
+                            <!-- item start -->
+							<li class="item">
+								<div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+								</div>
+								<div class="item_prices reduced">
+									<h3>Your Ideal Hotel</h3>
+                                    <span class="saving saving_30"><!-- --></span>
+									<div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat5">5</span>
+                                            <span class="img_sprite_moon city_icon"></span>
+                                            <span class="city_name">Berlin</span>
+                                        </div>
+										<ul class="hotel_prices">
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+										</ul>
+										<ul class="item_nav cf">
+											<li class="rating js_slideout_trigger val_5 button standard" id="js_button_rating_5568"
+                                                data-slideout="rating-5568" title="Bewertungen von Adlon Kempinski Berlin">
+												<strong>92</strong>
+												<span class="img_sprite_moon rating_smiley rating5"><!-- --></span>
+                                                  <span class="hotel_tester_icon">
+                                                    <span class="hotel_tester_tooltip" style="display: none;">
+                                                        <span class="hotel_tester_tooltip_text">Getestet</span>
+                                                    </span>
+                                                </span>
+											</li>
+											<li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+												<strong>4,8</strong>
+												<span>mi</span>
+											</li>
+											<li class="info js_slideout_trigger button standard last">
+												<span class="img_sprite_moon hotel_info"><!-- --></span>
+												<span>Info</span>
+											</li>
+											<li class="available_on deals js_slideout_trigger button standard all_prices">
+												<span class="label">View all deals <i>from 24 websites</i></span>
+												<span class="img_sprite_moon arrow arrow_down"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="item_bestprice">
+										<strong class="partner_name">Expedia</strong>
+										<div class="price_max">
+											<span class="wrapper"><span class="price"><del>391€</del></span></span>
+										</div>
+										<strong class="price_min">220€</strong>
+										<button class="button deal" type="button">
+											<span class="label"> View Deal </span>
+											<span class="img_sprite_moon arrow_right"></span>
+										</button>
+									</div>
+								</div>
+							</li>
+                            <!-- item end -->
+                            <!-- item start -->
+							<li class="item">
+								<div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+								</div>
+								<div class="item_prices">
+									<h3>Your Ideal Hotel</h3>
+									<div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat4">3</span>
+                                        </div>
+										<ul class="hotel_prices">
+											<li class="promotion_price js_mgLink">
+												<em>trivago Hoteltest: 40€ Prämie</em>
+												<strong>96€</strong>
+											</li>
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+										</ul>
+										<ul class="item_nav cf">
+											<li class="rating js_slideout_trigger val_1 button standard" id="js_button_rating_370816"
+                                                data-slideout="rating-370816" title="Bewertungen von Azimut Hotel Berlin City South">
+												<strong>68</strong>
+												<span class="img_sprite_moon rating_smiley rating1"><!-- --></span>
+											</li>
+											<li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+												<strong>4,8</strong>
+												<span>mi</span>
+											</li>
+											<li class="info js_slideout_trigger button standard last">
+												<span class="img_sprite_moon hotel_info"><!-- --></span>
+												<span>Info</span>
+											</li>
+											<li class="available_on deals js_slideout_trigger button standard all_prices">
+												<span class="label">View all deals <i>from 24 websites</i></span>
+												<span class="img_sprite_moon arrow arrow_down"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="item_bestprice">
+										<strong class="partner_name">Expedia</strong>
+										<strong class="price">220€</strong>
+										<button class="button deal" type="button">
+											<span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+										</button>
+									</div>
+								</div>
+							</li>
+                            <!-- item end -->
+                            <!-- item start -->
+							<li class="item">
+								<div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+								</div>
+								<div class="item_prices">
+									<h3>Your Ideal Hotel</h3>
+									<div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat2">2</span>
+                                        </div>
+										<ul class="hotel_prices">
+											<li class="direct_price price">
+												<em>Direkt beim Hotel buchen</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+										</ul>
+										<ul class="item_nav cf">
+											<li class="rating js_slideout_trigger val_2 button standard" data-slideout="" title="">
+												<strong>73</strong>
+												<span class="img_sprite_moon rating_smiley rating2"><!-- --></span>
+											</li>
+											<li class="distance map js_slideout_trigger button standard" data-slideout="" title="">
+												<strong>4,8</strong>
+												<span>mi</span>
+											</li>
+											<li class="info js_slideout_trigger button standard last">
+												<span class="img_sprite_moon hotel_info"><!-- --></span>
+												<span>Info</span>
+											</li>
+											<li class="available_on deals js_slideout_trigger button standard all_prices">
+												<span class="label">View all deals <i>from 24 websites</i></span>
+												<span class="img_sprite_moon arrow arrow_down"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="item_bestprice">
+										<strong class="partner_name">Expedia</strong>
+										<div class="price_max">
+											<span class="wrapper"><span class="price"><del>391€</del></span></span>
+										</div>
+										<strong class="price_min">220€</strong>
+										<button class="button deal" type="button">
+											<span class="label"> View Deal </span>
+                                            <span class="img_sprite_moon arrow_right"></span>
+										</button>
+									</div>
+								</div>
+							</li>
+                            <!-- item end -->
+                            <!-- item start -->
+							<li class="item">
+								<div class="item_image">
+                                    <img src="images/hotel_ph.jpg" alt=""/>
+								</div>
+								<div class="item_prices">
+									<h3>Your Ideal Hotel</h3>
+									<div class="item_main">
+                                        <div class="cf">
+                                            <span class="img_sprite_moon stars cat1">1</span>
+                                        </div>
+										<ul class="hotel_prices">
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price single_price_last">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+											<li class="single_price price even single_price_last max_price">
+												<em>Expedia</em>
+												<strong>77€</strong>
+											</li>
+										</ul>
+										<ul class="item_nav cf">
+											<li class="rating js_slideout_trigger val_0 button standard" id="js_button_rating_8935243"
+                                                data-slideout="rating-893523" title="Bewertungen von Best Western Grand City Berlin Mitte">
+                                                <span>?</span>
+											</li>
+											<li class="distance map js_slideout_trigger button standard disabled" data-slideout="" title="">
+                                                <span class="img_sprite_moon map"><!-- --></span>
+												<span>mi</span>
+											</li>
+											<li class="info js_slideout_trigger button standard last">
+												<span class="img_sprite_moon hotel_info"><!-- --></span>
+												<span>Info</span>
+											</li>
+											<li class="available_on deals disabled js_slideout_trigger button standard">
+												<span class="label">Keine Angebote</span>
+												<span class="img_sprite_moon arrow arrow_down"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="item_bestprice no_availabilty">
+                                        <div>
+                                            Keine Angebote verfügbar. Bitte wählen Sie ein anderes Datum.
+                                        </div>
+									</div>
+								</div>
+							</li>
+                            <!-- item end -->
+						</ul>
+                        <!-- itemlist end -->
+					</div>
+				</div>
+			</div>
+			<!-- footer start -->
+			<div class="row footer cf">
+				<div class="head_bg"></div>
+				<div class="footer_wrapper">
+					<div class="about">
+						<h3>Über trivago</h3>
+						<ul class="about-trivago">
+							<li class="link js_cLinkOut">
+								Unternehmen
+							</li>
+							<li class="link js_cLinkOut">
+								Hotelier
+							</li>
+							<li class="link js_cLinkOut">
+								trivago Hoteltest
+							</li>
+							<li class="link js_cLinkOut">
+								FAQ
+							</li>
+							<li class="link js_cLinkOut">
+								Jobs
+							</li>
+							<li class="link js_cLinkOut">
+								Kontakt
+							</li>
+							<li class="link js_cLinkOut">
+								Presse
+							</li>
+							<li class="link js_cLinkOut">
+								AGB
+							</li>
+							<li>
+								<a href="http://blog.trivago.de" class="link ">Blog</a>
+							</li>
+							<li class="link js_cLinkOut">
+								Impressum
+							</li>
+							<li>
+								<a href="http://www.trivago.de/site_map" class="link "> Site Map</a>
+							</li>
+							<li class="link js_cLinkOut">
+								Datenschutz
+							</li>
+						</ul>
+					</div>
+					<div class="international">
+						<h3>trivago International</h3>
+						<div id="locale_selector">
+							<ul class="locale_selector">
+								<li>
+									<a lang="zh" xml:lang="zh" href="http://www.trivago-hotel.cn" class="country_link">酒店 中国</a>
+								</li>
+								<li>
+									<a lang="es" xml:lang="es" href="http://www.trivago.com.mx" class="country_link">Hotel
+									México </a>
+								</li>
+								<li>
+									<a lang="it" xml:lang="it" href="http://www.trivago.it" class="country_link">Hotel Italia</a>
+								</li>
+								<li>
+									<a lang="de" xml:lang="de" href="http://www.trivago.at" class="country_link">Hotel
+									Österreich </a>
+								</li>
+								<li>
+									<a lang="tr" xml:lang="tr" href="http://www.trivago.com.tr" class="country_link">Otel
+									Türkiye </a>
+								</li>
+								<li>
+									<a lang="ja" xml:lang="ja" href="http://www.trivago.jp" class="country_link">ホテル 日本</a>
+								</li>
+								<li>
+									<a lang="nl" xml:lang="nl" href="http://www.trivago.be" class="country_link">Hotel België</a>
+								</li>
+								<li>
+									<a lang="cs" xml:lang="cs" href="http://www.trivago.cz" class="country_link">Hotel Česko</a>
+								</li>
+								<li>
+									<a lang="nl" xml:lang="nl" href="http://www.trivago.nl" class="country_link">Hotel Nederland</a>
+								</li>
+								<li>
+									<a lang="bg" xml:lang="bg" href="http://www.trivago.bg" class="country_link">Хотел България</a>
+								</li>
+								<li>
+									<a lang="de" xml:lang="de" href="http://www.trivago.de" class="country_link">Hotel
+									Deutschland </a>
+								</li>
+								<li>
+									<a lang="no" xml:lang="no" href="http://www.trivago.no" class="country_link">Hotell Norge</a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.ca" class="country_link">Hotel Canada</a>
+								</li>
+								<li>
+									<a lang="da" xml:lang="da" href="http://www.trivago.dk" class="country_link">Hotel Danmark</a>
+								</li>
+								<li>
+									<a lang="pl" xml:lang="pl" href="http://www.trivago.pl" class="country_link">Hotel Polska</a>
+								</li>
+								<li>
+									<a lang="de" xml:lang="de" href="http://www.trivago.ch" class="country_link">Hotel Schweiz</a>
+								</li>
+								<li>
+									<a lang="es" xml:lang="es" href="http://www.trivago.es" class="country_link">Hotel España</a>
+								</li>
+								<li>
+									<a lang="pt" xml:lang="pt" href="http://www.trivago.pt" class="country_link">Hotel Portugal</a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.co.nz" class="country_link">Hotel New
+									Zealand </a>
+								</li>
+								<li>
+									<a lang="fi" xml:lang="fi" href="http://www.trivago.fi" class="country_link">Hotellit Suomi</a>
+								</li>
+								<li>
+									<a lang="ro" xml:lang="ro" href="http://www.trivago.ro" class="country_link">Hotel România</a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.co.uk" class="country_link">Hotel United
+									Kingdom </a>
+								</li>
+								<li>
+									<a lang="fr" xml:lang="fr" href="http://www.trivago.fr" class="country_link">Hôtel France</a>
+								</li>
+								<li>
+									<a lang="sr" xml:lang="sr" href="http://www.trivago.rs" class="country_link">Hotel Srbija</a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.com" class="country_link">Hotel USA</a>
+								</li>
+								<li>
+									<a lang="el" xml:lang="el" href="http://www.trivago.gr" class="country_link">Ξενοδοχείο
+									Ελλάδα </a>
+								</li>
+								<li>
+									<a lang="ru" xml:lang="ru" href="http://www.trivago.ru" class="country_link">Отель Россия</a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.com.au" class="country_link">Hotel
+									Australia </a>
+								</li>
+								<li>
+									<a lang="hu" xml:lang="hu" href="http://www.trivago.hu" class="country_link">Hotel
+									Magyarország </a>
+								</li>
+								<li>
+									<a lang="sv" xml:lang="sv" href="http://www.trivago.se" class="country_link">Hotell Sverige</a>
+								</li>
+								<li>
+									<a lang="pt" xml:lang="pt" href="http://www.trivago.com.br" class="country_link">Hotel
+									Brasil </a>
+								</li>
+								<li>
+									<a lang="en" xml:lang="en" href="http://www.trivago.ie" class="country_link">Hotel Ireland</a>
+								</li>
+								<li>
+									<a lang="sl" xml:lang="sl" href="http://www.trivago.si" class="country_link">Hotel Slovenija</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="copy js_external_links">
+						<div itemscope="" itemtype="http://schema.org/PostalAddress">
+							<strong itemprop="name">trivago GmbH</strong>
+							,
+							<span itemprop="streetAddress">Bennigsen-Platz 1</span>
+							,
+							<span itemprop="postalCode" style="margin-right: 0.4em;">40474</span>
+							<span itemprop="addressLocality">Düsseldorf</span>
+							,
+							<span itemprop="addressCountry">Deutschland</span>
+						</div>
+						<p class="copyright">
+							2004-2013 trivago v7_03_3. 3723 3761 3990 4326 4593 4604 4621 4708 5147 5286 5408 5568
+							- Alle Rechte vorbehalten.
+							<br>
+							Besuchen Sie uns auf
+							<a target="_blank" href="http://www.facebook.com/trivago">Facebook</a>
+							und
+							<a target="_blank" href="https://plus.google.com/u/0/104932839474048215618/posts">Google+</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- footer end -->
+		</div>
+	</body> 
+    <script src="js/lib/jquery-1.11.1.min.js"></script>  
+    <script src="js/test.js"></script>
+
+</html>

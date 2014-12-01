@@ -1,0 +1,330 @@
+.itemZoom{
+  position : absolute;
+  z-index : 2000;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  min-width: 200px;
+
+    .item_prices{
+      position: relative;
+      display: block;
+
+        > *:not(.item_bestprice){
+          display: inline-block;
+          width: 70%;
+        }
+
+      .item_main {
+        vertical-align: top;
+        position: relative;
+      }
+
+        h3{
+          font-size: 21px;
+        }
+
+        ul.item_nav.cf{
+          display: block;
+
+          .hotel_tester_icon{
+            display: none;
+          }
+
+
+          > li {
+            display: none;
+          }
+
+          li:first-child{
+            display: inline-block;
+            margin-top: 19px;
+          }
+        }
+
+        div.cf{
+          > * {
+            display: inline-block;
+            line-height: 20px;
+          }
+          .stars{
+            width: 80px;
+          }
+          .superior{
+            width: 12px;
+          }
+          .city_name{
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+          }
+        }
+
+        .item_bestprice{
+          display: inline-block;
+          width: 28%;
+          position: relative;
+          text-align:center;
+          margin-top: -23px;
+          cursor:pointer;
+          background-color: #f6f6f6;
+          margin-bottom: 10px;
+
+          float: right\9;
+          margin-top: -104px\9;
+
+          &:hover .partner_name{
+            color:#333
+          }
+          &.no_availability{
+            background-image:url("http://ie2.trivago.com/images/layoutimages/mars/rwd_noprice.png");
+            background-repeat:no-repeat;
+            background-position:40px 2px;
+            font-size:11px;
+            color:#999
+          }
+
+          @media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2){
+            &.no_availability{
+              background-image:url("http://ie2.trivago.com/images/layoutimages/mars/rwd_noprice@2x.png");
+              background-size:70px 70px;
+            }
+          }
+
+          &.no_availability>div{
+            position:absolute;
+            bottom:0;
+          }
+
+           .partner_name{
+            display:block;
+            font-size:12px;
+            padding:2px 0 6px;
+            color:#666;
+            font-weight:bold;
+            text-transform: uppercase ;
+          }
+
+          .price_max{
+            height:23px;
+            margin:0;
+            text-decoration:none;
+          }
+
+          .price_max .wrapper{
+            padding-top:0;
+            position:relative;
+          }
+
+          .price_max .wrapper .price{
+            color:#a72c32;
+            font-size:21px;
+            font-weight:bold;
+            position:relative;
+            z-index:1;
+          }
+          .price_min{
+            font-size:15px;
+            line-height:17px;
+            color:#0030cd;
+//            color:#119a11;
+            font-weight:bold;
+          }
+          .price{
+            color:#119a11;
+            display:inline;
+            font-size:21px;
+            padding-bottom:14px;
+            font-weight:bold;
+          }
+
+            > * {
+              display: block;
+              text-align: center;
+            }
+
+            .deal{
+              position: relative;
+              margin: auto;
+              width: 100%;
+
+              .label{
+                width: 80%;
+              }
+
+              .arrow_right{
+                position: absolute;
+                right: 0;
+                width: 19%;
+              }
+            }
+
+        }
+
+        .closeBox{
+          position: absolute;
+          right: -27px;
+          top: -27px;
+          width: 23px;
+          height: 23px;
+          border-radius: 15px;
+          background-color: darkred;
+          font-size: 14px;
+          text-align: center;
+          line-height: 23px;
+          color: #fff;
+          cursor: pointer;
+          font-weight: bold;
+          border: 2px solid #fff;
+        }
+    }
+
+    .separetor{
+        width: 100%;
+        display: block;
+        background-color: #eeeeee;
+        position: absolute;
+        left: 0px;
+        height: 25px;
+        border-bottom: 1px solid #cccccc;
+        border-top: 1px solid #cccccc;
+
+        .tab{
+          width: 100px;
+          display: inline-block;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 25px;
+          border-right: 1px solid #cccccc;
+
+          @media screen and (max-width: 300px){
+            .tab{
+              width: 49%;
+            }
+          }
+
+            &.firstTab{
+              background-color: #ffffff;
+              border-bottom: 1px solid #ffffff;
+            }
+        }
+
+    }
+
+    .imgsWrapper{
+      padding-top: 33px;
+      &:after{
+        clear: both;
+        content: ' ';
+      }
+
+      .slot0, .slot1{
+        float: left;
+        display: inline-block;
+        width: 354px;
+
+
+      }
+
+      .slot0{
+        position: absolute;
+		left: 0;
+        *left: 10px;
+        *top: 160px;
+      }
+
+      .slot1{
+        padding-top: 212px;
+        *padding-top: 222px;
+      }
+
+      .slot2{
+        float: left;
+        margin-left: 4px;
+        display: inline-block;
+        width: 255px;
+      }
+
+      @media screen and (min-width: 600px) and (max-width:780px){
+        .slot0, .slot1 {
+          width: 65%;
+        }
+
+        .slot2 {
+          width: 34%;
+        }
+      }
+
+      @media screen and (max-width:599px){
+        .slot0, .slot1, .slot2 {
+          display: block;
+          text-align: center;
+          width: 99%;
+        }
+
+        .slot0{
+          width: 96%;
+        }
+      }
+
+      .imageDetailsPos0{
+          display: inline-block;
+          margin: 4px;
+          width: 356px;
+          height: 201px;
+
+      }
+      .imageDetailsPos1,.imageDetailsPos2,.imageDetailsPos3,.imageDetailsPos4{
+          display: inline-block;
+          width: 171px;
+          height: 95px;
+          margin-left : 4px;
+        }
+      .imageDetailsPos3,.imageDetailsPos4{
+          margin-top : 4px;
+
+      }
+      .imageDetailsPos5,.imageDetailsPos6,.imageDetailsPos7{
+        display: inline-block;
+        height: 131px;
+        width: 247px;
+        margin-top: 4px;
+      }
+
+
+      @media screen and (max-width:800px){
+        .imageDetailsPos0, .imageDetailsPos5,.imageDetailsPos6,.imageDetailsPos7 {
+          width: 98%;
+          display: block;
+          margin: 4px 0;
+        }
+      @media screen and (min-width: 600px) and (max-width:780px){
+        .imageDetailsPos0{
+          width: 94%;
+        }
+      }
+        .imageDetailsPos1,.imageDetailsPos2,.imageDetailsPos3,.imageDetailsPos4{
+          width: 48%;
+        }
+
+      }
+    }
+
+}
+
+#overlay{
+  z-index : 1900;
+  opacity : 0.4;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  /* IE 5-7 */
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.4;
+  background-color : #000;
+  position : fixed;
+  top : 0;
+  left : 0;
+  width: 100%;
+  height: 100%;
+
+}
